@@ -1,64 +1,56 @@
-* {
-
-.hero {
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: radial-gradient(circle at top, #14213d, #0b0f1a);
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Segoe UI,sans-serif;
 }
-
-.hero h1 {
-  font-size: 50px;
-  margin-bottom: 20px;
+body{
+  background:#0b0f1a;
+  color:#fff;
 }
-
-.hero p {
-  font-size: 18px;
-  max-width: 600px;
-  color: #ccc;
+header{
+  display:flex;
+  justify-content:space-between;
+  padding:20px 60px;
+  background:rgba(255,255,255,0.05);
+  position:sticky;
+  top:0;
 }
-
-.btn {
-  margin-top: 20px;
-  padding: 12px 25px;
-  background: #00d4ff;
-  border: none;
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 8px;
+.logo{color:#00d4ff;font-size:22px;font-weight:bold;}
+nav a{
+  color:#fff;
+  margin-left:18px;
+  text-decoration:none;
 }
-
-.section {
-  padding: 80px 60px;
+nav a:hover{color:#00d4ff;}
+.hero{
+  height:85vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background:radial-gradient(circle,#14213d,#0b0f1a);
 }
-
-.cards {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+.hero h1{font-size:48px;}
+.hero p{color:#bbb;max-width:600px;margin-top:10px;}
+.btn{
+  margin-top:20px;
+  padding:12px 24px;
+  background:#00d4ff;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
 }
-
-.card {
-  flex: 1;
-  min-width: 250px;
-  background: rgba(255,255,255,0.05);
-  padding: 20px;
-  border-radius: 12px;
-  transition: 0.3s;
+.section{padding:70px 60px;}
+.cards{display:flex;gap:20px;flex-wrap:wrap;}
+.card{
+  flex:1;
+  min-width:220px;
+  background:rgba(255,255,255,0.05);
+  padding:20px;
+  border-radius:12px;
 }
-
-.card:hover {
-  transform: translateY(-10px);
-  background: rgba(0,212,255,0.1);
-}
-
-footer {
-  text-align: center;
-  padding: 30px;
-  background: #05070f;
-  color: #aaa;
-}
+.card:hover{transform:translateY(-6px);transition:0.3s;}
+img{max-width:100%;border-radius:12px;}
+footer{text-align:center;padding:25px;color:#888;}
