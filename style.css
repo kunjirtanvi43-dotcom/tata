@@ -1,0 +1,64 @@
+* {
+
+.hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: radial-gradient(circle at top, #14213d, #0b0f1a);
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 600px;
+  color: #ccc;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #00d4ff;
+  border: none;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.section {
+  padding: 80px 60px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 250px;
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: rgba(0,212,255,0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #05070f;
+  color: #aaa;
+}
